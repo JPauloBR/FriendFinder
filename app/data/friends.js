@@ -69,7 +69,7 @@ var friends = [
 	},
 	{
 		"name": "Steve Jobs",
-		"photo": "http://image.boomsbeat.com/data/images/full/209/jobs-jpg.jpg",
+		"photo": "https://www.helpscout.net/images/blog/steve-jobs.jpg",
 		"scores": 
 			[
 				"4",

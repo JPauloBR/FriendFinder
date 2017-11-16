@@ -1,6 +1,6 @@
 # FriendFinder
-* Find friends based on best matched profile
-* Heroku Deployment: 
+* Dating app that match people according with their survey's responses
+* Heroku Deployment: https://lit-beyond-59834.herokuapp.com/
 
 # Details
 

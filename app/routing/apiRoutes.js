@@ -15,7 +15,6 @@ module.exports = function(app) {
     var sum = 0;
     for (var i=0; i<friendsData.length; i++) {
       var tempSum = 0;
-      console.log("Friends: "+ friendsData[i].name);
 
 
       for (var j=0; j<friendsData[i].scores.length; j++) {
@@ -51,7 +50,6 @@ module.exports = function(app) {
 
   app.post("/api/friends", function(req, res) {
     var userScoreArray = req.body["scores[]"];
-    console.log("userScoreArray: "+ userScoreArray);
 
     //logic data for compatibility    
 
@@ -62,21 +60,7 @@ module.exports = function(app) {
       photo: req.body.photo,
       scores: userScoreArray
     }
-    friendsData.push(newFriend);
-
-
-    console.log(req.body);
-    console.log(req.body.name);
-    console.log(req.body.photo);
-    console.log(userScoreArray);
-    console.log("Best Match: " +bestMatch);
-
-    // var scores = JSON.parse(req.body.scores);
-
-    // for (var i = 0; i < Things.length; i++) {
-    //   Things[i]
-    // }
-
+    friendsData.push(newFriend); 
     res.send(bestMatch);
     res.json(true);  
   });
