@@ -9,7 +9,6 @@ var friendsData = require("../data/friends");
 module.exports = function(app) {
 
   function verComp(scores) {
-    console.log(scores);
     var match = {};
     var matchIndex = 0;
     var sum = 0;
@@ -62,7 +61,8 @@ module.exports = function(app) {
     }
     friendsData.push(newFriend); 
     res.send(bestMatch);
-    res.json(true);  
+    res.json(true); 
+    res.redirect("/survey"); 
   });
 
 };
